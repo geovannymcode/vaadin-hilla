@@ -1,22 +1,21 @@
 package com.geovannycode.domain;
 
-import org.springframework.stereotype.Service;
+import com.vaadin.flow.server.auth.AnonymousAllowed;
+import com.vaadin.hilla.BrowserCallable;
+import com.vaadin.hilla.crud.CrudRepositoryService;
 
 import java.util.List;
 
-@Service
-public class EmployeeService {
-    private final EmployeeRepository employeeRepository;
-
-    public EmployeeService(EmployeeRepository employeeRepository) {
-        this.employeeRepository = employeeRepository;
-    }
+@BrowserCallable
+@AnonymousAllowed
+public class EmployeeService extends CrudRepositoryService<Employee, Long, EmployeeRepository> {
 
     public List<Employee> findAll() {
-        return employeeRepository.findAll();
+        return getRepository().findAll();
     }
 
-    public Employee save(Employee employee) {
-        return employeeRepository.save(employee);
+   public Employee save(Employee employee) {
+        return getRepository().save(employee);
     }
+
 }

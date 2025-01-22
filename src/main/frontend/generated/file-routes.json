@@ -3,6 +3,24 @@
     "route": "",
     "flowLayout": false,
     "params": {},
-    "title": "Index"
+    "title": "Employees"
+  },
+  {
+    "route": "auto-crud",
+    "flowLayout": false,
+    "params": {},
+    "title": "Auto Crud Crud"
+  },
+  {
+    "route": "auto-form",
+    "flowLayout": false,
+    "params": {},
+    "title": "Employee Form"
+  },
+  {
+    "route": "auto-grid",
+    "flowLayout": false,
+    "params": {},
+    "title": "Employee Grid"
   }
 ]

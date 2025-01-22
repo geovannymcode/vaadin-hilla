@@ -1,9 +1,11 @@
 package com.geovannycode.domain;
 
-import org.springframework.data.relational.core.mapping.Table;
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-@Table("employees")
+@Table(name = "employees")
+@Entity
 public class Employee {
     @Id
     private Long id;
