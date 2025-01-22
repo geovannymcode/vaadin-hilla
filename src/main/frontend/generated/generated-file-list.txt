@@ -7,6 +7,7 @@ com/vaadin/hilla/crud/filter/PropertyStringFilter.ts
 com/geovannycode/domain/Employee.ts
 com/vaadin/hilla/mappedtypes/Pageable.ts
 com/vaadin/hilla/crud/filter/PropertyStringFilter/Matcher.ts
+com/geovannycode/domain/Gender.ts
 com/vaadin/hilla/mappedtypes/Sort.ts
 com/vaadin/hilla/mappedtypes/Order.ts
 org/springframework/data/domain/Sort/Direction.ts
@@ -20,6 +21,7 @@ com/vaadin/hilla/crud/filter/PropertyStringFilterModel.ts
 com/geovannycode/domain/EmployeeModel.ts
 com/vaadin/hilla/mappedtypes/PageableModel.ts
 com/vaadin/hilla/crud/filter/PropertyStringFilter/MatcherModel.ts
+com/geovannycode/domain/GenderModel.ts
 com/vaadin/hilla/mappedtypes/SortModel.ts
 com/vaadin/hilla/mappedtypes/OrderModel.ts
 org/springframework/data/domain/Sort/DirectionModel.ts

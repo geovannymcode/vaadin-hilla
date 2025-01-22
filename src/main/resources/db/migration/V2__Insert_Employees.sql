@@ -1,11 +1,11 @@
-INSERT INTO employees (id, name, email, phone) VALUES
-                                                   (1, 'Geovanny Mendoza', 'geovanny.mendoza@example.com', '123-456-7890'),
-                                                   (2, 'Elena Aguirre', 'elena.aguirre@example.com', '123-456-7891'),
-                                                   (3, 'Sandy Fabiola', 'sandy.fabiola@example.com', '123-456-7892'),
-                                                   (4, 'Omar Berroteran', 'omar.berroteran@example.com', '123-456-7893'),
-                                                   (5, 'Yesser Miranda', 'yesser.miranda@example.com', '123-456-7894'),
-                                                   (6, 'Laura Castillo', 'laura.castillo@example.com', '123-456-7895'),
-                                                   (7, 'Daniel Perdomo', 'daniel.perdomo@example.com', '123-456-7896'),
-                                                   (8, 'Carolina Reyes', 'carolina.reyes@example.com', '123-456-7897'),
-                                                   (9, 'Hernán Suárez', 'hernan.suarez@example.com', '123-456-7898'),
-                                                   (10, 'Isabel Rojas', 'isabel.rojas@example.com', '123-456-7899');
+INSERT INTO employees (id, first_name, last_name, gender, email, phone, start_date, shift_starts_at, active, description) VALUES
+                                                                                                                              (1, 'Geovanny', 'Mendoza', 'MALE', 'geovanny.mendoza@example.com', '123-456-7890', '2023-01-01', '08:00:00', true, 'Descripción 1'),
+                                                                                                                              (2, 'Elena', 'Aguirre', 'FEMALE', 'elena.aguirre@example.com', '123-456-7891', '2023-01-02', '09:00:00', true, 'Descripción 2'),
+                                                                                                                              (3, 'Sandy', 'Fabiola', 'FEMALE', 'sandy.fabiola@example.com', '123-456-7892', '2023-01-03', '10:00:00', true, 'Descripción 3'),
+                                                                                                                              (4, 'Omar', 'Berroteran', 'MALE', 'omar.berroteran@example.com', '123-456-7893', '2023-01-04', '11:00:00', true, 'Descripción 4'),
+                                                                                                                              (5, 'Yesser', 'Miranda', 'MALE', 'yesser.miranda@example.com', '123-456-7894', '2023-01-05', '12:00:00', true, 'Descripción 5'),
+                                                                                                                              (6, 'Laura', 'Castillo', 'FEMALE', 'laura.castillo@example.com', '123-456-7895', '2023-01-06', '13:00:00', true, 'Descripción 6'),
+                                                                                                                              (7, 'Daniel', 'Perdomo', 'MALE', 'daniel.perdomo@example.com', '123-456-7896', '2023-01-07', '14:00:00', true, 'Descripción 7'),
+                                                                                                                              (8, 'Carolina', 'Reyes', 'FEMALE', 'carolina.reyes@example.com', '123-456-7897', '2023-01-08', '15:00:00', true, 'Descripción 8'),
+                                                                                                                              (9, 'Hernán', 'Suárez', 'MALE', 'hernan.suarez@example.com', '123-456-7898', '2023-01-09', '16:00:00', true, 'Descripción 9'),
+                                                                                                                              (10, 'Isabel', 'Rojas', 'FEMALE', 'isabel.rojas@example.com', '123-456-7899', '2023-01-10', '17:00:00', true, 'Descripción 10');

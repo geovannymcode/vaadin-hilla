@@ -20,11 +20,17 @@ export default function Employees() {
     return (
         <div className="p-m flex flex-col gap-m">
             <h2>Empleados</h2>
-        <Grid items={employees.value}>
-            <GridSortColumn path="name" header="Nombre" />
-            <GridSortColumn path="email" header="Correo Electrónico" />
-            <GridSortColumn path="phone" header="Teléfono" />
-        </Grid>
+            <Grid items={employees.value}>
+                <GridSortColumn path="firstName" header="Nombre" />
+                <GridSortColumn path="lastName" header="Apellido" />
+                <GridSortColumn path="gender" header="Género" />
+                <GridSortColumn path="email" header="Correo Electrónico" />
+                <GridSortColumn path="phone" header="Teléfono" />
+                <GridSortColumn path="startDate" header="Fecha de Inicio" />
+                <GridSortColumn path="shiftStartsAt" header="Inicio del Turno" />
+                <GridSortColumn path="active" header="Activo" />
+                <GridSortColumn path="description" header="Descripción" />
+            </Grid>
         </div>
     );
 }
