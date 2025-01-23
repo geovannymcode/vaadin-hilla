@@ -17,3 +17,5 @@
 
 # vaadin-hilla
 Example of Vaadin with Hilla
+
+Description of documentation in blog 
