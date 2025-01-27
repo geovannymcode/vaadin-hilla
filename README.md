@@ -49,47 +49,49 @@ El proyecto demuestra cómo crear un CRUD funcional con Hilla, utilizando **Type
 
 ### Configuración de la base de datos con Docker Compose
 
-1. Clona el repositorio:
+1. **Clona el repositorio:**
 
    ```bash
    git clone https://github.com/geovannymcode/vaadin-hilla.git
    cd vaadin-hilla
-Inicia el contenedor de PostgreSQL:
+   ```
 
-bash
-Copiar
-Editar
+2. **Inicia el contenedor de PostgreSQL:**
+
+```bash
 docker-compose up -d
-Esto levantará un contenedor PostgreSQL accesible en el puerto 15432.
+```
+Esto levantará un contenedor PostgreSQL accesible en el puerto `15432`.
 
-Verifica que el contenedor esté en ejecución:
+3. **Verifica que el contenedor esté en ejecución:**
 
-bash
-Copiar
-Editar
+```bash
 docker ps
-Configuración manual de la base de datos
+```
+
+4. **Configuración manual de la base de datos**
+   
 Si prefieres configurar la base de datos manualmente, crea una base de datos PostgreSQL con las credenciales especificadas en application.properties:
 
-properties
-Copiar
-Editar
+```properties
 spring.datasource.url=jdbc:postgresql://localhost:15432/postgres
 spring.datasource.username=postgres
 spring.datasource.password=postgres
-Compilación y ejecución
+```
+
+5. **Compilación y ejecución**
+
 Instalar dependencias:
 
-bash
-Copiar
-Editar
+```bash
 ./mvnw install
-Ejecutar la aplicación:
+```
 
-bash
-Copiar
-Editar
+6. **Ejecutar la aplicación:**
+
+```bash
 ./mvnw spring-boot:run
+```
 Accede a la aplicación en http://localhost:8080.
 
 ## Estructura del proyecto
@@ -123,4 +125,26 @@ src
 │       │       ├── V1__Create_Employees_Table.sql # Crear tabla de empleados
 │       │       └── V2__Insert_Employees.sql       # Insertar datos iniciales
 │       └── application.properties # Configuración de Spring Boot
+```
+
+## Recursos adicionales
+
+- [Documentación oficial de Hilla](https://hilla.dev/docs/)
+- [Documentación oficial de Vaadin Flow](https://vaadin.com/docs/latest/flow)
+
+## Contribuciones
+
+Si deseas contribuir al proyecto, realiza un fork del repositorio y abre un pull request con tus cambios.
+
+## Autor
+
+Creado por [Geovanny Mendoza](https://geovannycode.com).
+
+## Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
+
+---
+
+Si deseas más detalles sobre este proyecto, revisa el artículo completo en mi blog: [Introducción a Hilla y el componente CRUD](https://geovannycode.com/introduccion-hilla-componente-crud/).
 
